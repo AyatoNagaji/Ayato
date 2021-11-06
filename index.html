@@ -1,90 +1,134 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="header-left">
-        <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="#">レッスン</a>
-        <a href="#">新規登録</a>
-        <a href="#" class="login">ログイン</a>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>LEARN TO CODE.<br>LEARN TO BE CREATIVE.</h1>
-      <p>Progateはオンラインプログラミング学習サービスです。<br>初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。</p>
-      <div class="btn-wrapper">
-        <a href="#" class="btn signup">新規登録はこちら</a>
-        <p>or</p>
-        <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
-        <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
-      </div>
-    </div>
-  </div>
-  <div class="lesson-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>Learn Where to Get Started!</h2>
-      </div>
-      <div class="lessons">
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/html.png">
-            <p>HTML & CSS</p>
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!--CSS-->
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+<link href="stylesheet.css" rel="stylesheet">
+    <title>私は仕事が大好きです。</title>
+  </head>
+  <body>
+    
+    <header>
+        <nav class="nav_wrapper navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid ">
+            <!-- Just an image -->
+            <nav class="navbar navbar-light">
+              <div class="container">
+                <a class="navbar-brand" href="#">
+                  <img src="images\header_logo.png" alt="" class="header_logo">
+                </a>
+              </div>
+            </nav>
+            <button class="navbar-toggler header_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="header_list navbar-nav">
+                <li class="">
+                  <a class="nav-link pb-0 mx-3" href="#">企業理念</a>
+                </li>
+                <li class="">
+                  <a class="nav-link pb-0 mx-3" href="#">施工事例</a>
+                </li>
+                <li class="">
+                  <a class="nav-link pb-0 mx-3" href="#">採用情報</a>
+                </li>
+                <li class="">
+                  <a class="nav-link pb-0 mx-3" href="#">お問い合わせ</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <p class="text-contents">ウェブページの作成に使用される言語です。HTMLとCSSを組み合わせることで、静的なページを作り上げることができます。</p>
+        </nav>
+        <h1 class="header_title">街を作る。未来を作る。</h1>
+    </header>
+
+      <div class="container">
+        <!--お知らせ-->
+        <div>
+          <h1 class="text-center">お知らせ</h1>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-            <p>jQuery</p>
+        <div class="news_list_wrapper row justify-content-center mt-5">
+          <a class="news_list col-md-8 mt-4 text-decoration-none text-dark" href="#">
+            <button class="" type="button">
+            2020.11.17<span class="border border-dark p-1 news">お知らせ</span><br class="d-md-none"><span class="brbr">本社打合せ室が完成しました</span><br>
+          </button></a>
+          <a class="news_list col-md-8 mt-4 text-decoration-none text-dark" href="#">
+            <button class="" type="button">
+            2020.11.10<span class="border border-dark p-1">お知らせ</span><br class="d-md-none"><span class="brbr">【メディア掲載】住宅雑誌 2020年11月号</span><br>
+          </button></a>
+          <a class="news_list col-md-8 mt-4 text-decoration-none text-dark" href="#">
+            <button class="" type="button">
+            2020.11.01<span class="border border-dark p-1">お知らせ</span><br class="d-md-none"><span class="brbr">ホームページが完成しました。</span><br>
+          </button></a>
+        </div>
+
+        <!--施工事例-->
+        <div>
+          <h1 class="sekoujirei text-center">施工事例</h1>
+        </div>
+        <div class="row column_2 text-center">
+          <div class="col-12 col-md-6 mx-auto m-5">
+            <img src="images\building1.png" alt="" class="img-fluid">
+                <h4 class="pt-4 pb-2">M様邸新築工事</h4>
+                <p class="jyuusyo">埼玉県</p>
+                <a class="text-decoration-none text-dark" href="#"><button class="syousai" type="button">▷ 詳細を見る</button></a>
           </div>
-          <p class="text-contents">素敵な動きを手軽に実装できるJavaScriptライブラリです。 アニメーション効果をつけたり、Ajax（エイジャックス）を使って外部ファイルを読み込んだりと色々なことができます。</p>
-        </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/ruby.png">
-            <p>Ruby</p>
+          <div class="col-12 col-md-6 mx-auto m-5">
+            <img src="images\building2.png" alt="" class="img-fluid">
+              <h4 class="pt-4 pb-2">スカイビル</h4>
+              <p class="jyuusyo">東京都</p>
+              <a class="text-decoration-none text-dark" href="#"><button class="syousai" type="button">▷ 詳細を見る</button></a>
           </div>
-          <p class="text-contents">オープンソースの動的なプログラミング言語で、 シンプルさと高い生産性を備えています。大きなWebアプリケーションから小さな日用ツールまで、さまざまなソフトウェアを作ることができます。</p>
         </div>
-        <div class="lesson">
-          <div class="lesson-icon">
-            <img src="https://prog-8.com/images/html/advanced/php.png">
-            <p>PHP</p>
+        <div class="row justify-content-center">
+        <a class="text-decoration-none text-dark text-center" href="#"><button class="sekoujireiitiran" type="button">
+        <h4 class="border border-dark px-4 py-3">施工事例一覧</h4>
+        </button></a></div>
+
+        <!--理念、採用、お問い合わせ-->
+        <div class="row img3">
+          <div class="col-12 col-md-4">
+            <a href="#"><img src="images\company.png" alt="" class="img-fluid"></a>
           </div>
-          <p class="text-contents">HTMLだけではページの内容を変えることはできません。PHPはHTMLにプログラムを埋め込み、それを可能にします。</p>
+          <div class="col-12 col-md-4">
+            <a href="#"><img src="images\recruit.png" alt="" class="img-fluid"></a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="#"><img src="images\contact.png" alt="" class="img-fluid"></a>
+          </div>
         </div>
+        
       </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="message-wrapper">
-    <div class="container">
-      <div class="heading">
-        <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
-        <h3>Let's learn to code, learn to be creative!</h3>
-      </div>
-      <span class="btn message">さっそく開発する</span>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <img src="https://prog-8.com/images/html/advanced/footer_logo.png">
-      <p>Learn to Code, Learn to be Creative.</p>
-    </div>
-  </footer>
-</body>
+
+      <footer >
+        <div class="footer_list_wrapper d-flex flex-md-row-reverse flex-column-reverse"> 
+          <a class="text-decoration-none footer_list" href="#footer">お問い合わせ</a>
+          <a class="text-decoration-none footer_list" href="#footer">採用情報</a>
+          <a class="text-decoration-none footer_list" href="#footer">施工事例</a>
+          <a class="text-decoration-none footer_list" href="#footer">企業理念</a>
+        </div>
+        <a href="#footer" class=""><img src="images\footer_logo.png" alt="" class="footer_logo"></a>
+      
+        <p class="text-white copyright">Copyright © 2020 Aono Corporation.</p>
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
