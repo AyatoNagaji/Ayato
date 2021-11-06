@@ -1,271 +1,210 @@
-* {
-  box-sizing: border-box;
+body{
+    font-family: 'Yu MIncho LIght',sans-serif;
+    font-weight: 400; 
 }
 
-body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+/*ナビバー*/
+header{
+    height: 800px;
+    background-image: url("images/main.png");
+    background-size: contain;
+    position: relative;
+}
+.nav_wrapper{
+    z-index: 1;
+}
+.header_logo{
+width:138.57px; 
+height:60px;
+}
+.header_button{
+    border: none;
+}
+.header_list{
+    margin-right: 100px;
+}
+.header_title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); 
 }
 
-a {
-  text-decoration: none;
+/*お知らせ欄*/
+.news_list{
+    border-bottom: solid 1px black;
+    padding-bottom: 15px;
+}
+.news_list_wrapper span{
+    margin:0 20px ;
 }
 
-.container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+/*施工事例*/
+.sekoujirei{
+    padding-top: 100px;
+}
+.column_2 .col-md-6{
+    padding: 0 70px;
+}
+.jyuusyo{
+    border-bottom: solid 1px black;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.syousai{
+    border-bottom: solid 1px black;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sekoujireiitiran{
+    margin-top: 25px;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(top.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
+/*理念、採用、お問い合わせ*/
+.img3{
+    margin-top: 170px;
+    margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 50vw);
+}
+.img3 .col-md-4{
+    padding: 0 0;
+}
+.img3 img{
+	display: block;
+	height: auto;
+}
+.img3 img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
+/*フッター*/
+footer{
+    height: 156px;
+    background-color: black;
 }
-
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.btn-wrapper {
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34,49,52,0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
-}
-
-.lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.clear {
-  clear: left;
-}
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
+.footer_list{
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
     font-size: 20px;
-  }
+}
+.footer_list:hover{
+    opacity: 0.5;
+    color: white;
+}
+.footer_list_wrapper{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); 
+    width: 1100px;
+    position: relative;
+}
+.footer_logo {
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    transform: translateY(-50%) translateX(-50%); 
+    float: left;
+    width: 92.8px;
+    height: 38.8px;
+}
+.footer_logo:hover{
+    opacity: 0.5;
+}
+footer{
+    position: relative;
+}
+.copyright{
+    font-size: 12px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); 
 }
 
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
 
-  .menu-icon {
-    display: block;
-  }
+/*--モバイル版--*/
+@media (max-width: 600px) {
+    header{
+        height: 320px;
+        background-image: url("images/main.png");
+        background-size: contain;
+        position: relative;
+    }
+    .header_title{
+        font-family: 'Yu MIncho LIght',sans-serif;
+        font-weight: 400;
+        font-size: medium; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%); 
+    }
+    .header_logo{
+        width:60px; 
+        height:25.98px;
+        }
 
-  .top-wrapper .btn {
-    width: 100%;
-  }
+/*お知らせ欄*/
+    .news_list_wrapper{
+        text-align: center;
+    }
+    .news_list{
+        border-bottom: solid 1px black;
+        padding-bottom: 10px;
+    }
+    .news_list{
+        position: relative;
+    }
+    .brbr{
+        width: 400px;
+        position: absolute;
+        top: 80%;
+        transform: translateY(-50%) translateX(-50%); 
+    }
+    /*施工事例*/
+    .sekoujireiitiran{
+        margin-top: 10px;
+    }
 
-  .twitter {
-    margin-top: 10px;
-  }
+/*理念、採用、お問い合わせ*/
+    .img3 img {
+        height: 100%;
+    }
 
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
+    /*フッター*/
+    footer{
+        height: 340px;
+    }
+    .footer_list_wrapper{
+        width: auto;
+         position: relative;
+    }
+    .footer_list{
+        margin:15px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+    .footer_logo {
+        position: absolute;
+        top:80%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%); 
+        float: left;
+        width: 92.8px;
+        height: 38.8px;
+    }
+    .copyright{
+        font-size: 12px;
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%); 
+    }
+    
 }
